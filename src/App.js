@@ -1,12 +1,21 @@
-import logo from './assets/logo.webp';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import BooksPage from './Pages/BooksPage'
+import CategoriesPage from './Pages/CategoriesPage'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <img src={logo} alt="logo" ></img>
-      <h1>Bookstore</h1>
-    </div>
+    <main>
+      <NavBar />
+      <Routes>
+        <Route path="Books" element={<BooksPage />} />
+        <Route path="Categories" element={<CategoriesPage />} />
+      </Routes>
+      <Footer />
+    </main>
   );
 }
 
