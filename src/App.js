@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import BooksPage from './Pages/BooksPage'
-import CategoriesPage from './Pages/CategoriesPage'
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import BooksPage from './Pages/BooksPage';
+import CategoriesPage from './Pages/CategoriesPage';
 import './App.css';
 
 function App() {
