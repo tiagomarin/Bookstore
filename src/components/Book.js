@@ -12,7 +12,7 @@ const Book = (props) => {
         <h4>{author}</h4>
         <div className="actions">
           <p>Comments</p>
-          <p>Remove</p>
+          <button type="button">Remove</button>
           <p>Edit</p>
         </div>
       </div>

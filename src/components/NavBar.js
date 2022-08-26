@@ -8,7 +8,7 @@ const NavBar = () => (
     <nav className="nav-bar">
       <p>Bookstore CMS</p>
       <ul className="links-nav">
-        <li><Link to="/books"> Books </Link></li>
+        <li><Link to="/"> Books </Link></li>
         <li><Link to="/Categories"> Categories </Link></li>
       </ul>
       <div className="user-logo">
