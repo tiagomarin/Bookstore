@@ -1,0 +1,18 @@
+.books-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 4rem;
+  height: 100%;
+}
+
+.br {
+  width: 90%;
+  margin: 0 4rem;
+  height: 0.02rem;
+  background-color: #e8e8e8;
+}

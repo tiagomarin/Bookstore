@@ -1,0 +1,24 @@
+.add-book-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 4rem;
+  gap: 1.5rem;
+}
+
+.add-book-form-title {
+  font-size: 2rem;
+}
+
+.add-book-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.add-book-form > *input {
+  background-color: white;
+}
