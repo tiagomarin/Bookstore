@@ -1,13 +1,9 @@
-import React, { Dispatch } from 'react';
 import './BooksPage.css';
 import bookList from '../fakeBooksData';
 import Book from '../components/Book';
 import AddBook from '../components/AddBook';
-import { removeBook } from '../Redux/book/books';
 
-const removeClickHandler = (bookID) => {
-  Dispatch(removeBook(bookID));
-};
+const removeClickHandler = () => { };
 const BooksPage = () => (
   <>
     <ul className="books-list">

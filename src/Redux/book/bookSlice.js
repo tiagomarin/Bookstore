@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export const booksSlice = createSlice({
   name: 'books',
@@ -8,12 +8,12 @@ export const booksSlice = createSlice({
       state.push(payload);
     },
     removeBook: (state, id) => {
-      state.filter(element => element.id !== id)
+      state.filter((element) => element.id !== id);
     },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { addBook, removeBook } = booksSlice.actions
+export const { addBook, removeBook } = booksSlice.actions;
 
-export default booksSlice.reducer
+export default booksSlice.reducer;
