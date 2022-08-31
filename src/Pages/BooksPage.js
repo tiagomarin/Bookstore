@@ -1,22 +1,19 @@
-import React from 'react';
 import './BooksPage.css';
 import bookList from '../fakeBooksData';
 import Book from '../components/Book';
 import AddBook from '../components/AddBook';
 
-const removeClickHandler = () => {
-
-};
+const removeClickHandler = () => { };
 const BooksPage = () => (
   <>
     <ul className="books-list">
       {bookList.map((book) => (
         <Book
-          key={book.book_id}
+          key={book.id}
           author={book.author}
           title={book.title}
           category={book.category}
-          removeClickHandler={removeClickHandler}
+          removeClickHandler={removeClickHandler(book.id)}
         />
       ))}
     </ul>
