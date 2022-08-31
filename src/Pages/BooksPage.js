@@ -1,24 +1,29 @@
-import './BooksPage.css';
-import bookList from '../fakeBooksData';
+import { useSelector } from 'react-redux';
 import Book from '../components/Book';
-import AddBook from '../components/AddBook';
+import AddBookForm from '../components/AddBookForm';
+// import { removeBook } from '../Redux/book/book';
+import './BooksPage.css';
 
-const removeClickHandler = () => { };
-const BooksPage = () => (
-  <>
-    <ul className="books-list">
-      {bookList.map((book) => (
-        <Book
-          key={book.id}
-          author={book.author}
-          title={book.title}
-          category={book.category}
-          removeClickHandler={removeClickHandler(book.id)}
-        />
-      ))}
-    </ul>
-    <span className="br" />
-    <AddBook />
-  </>
-);
+const BooksPage = () => {
+  const bookList = useSelector((state) => state.book);
+
+  return (
+    <>
+      <ul className="books-list">
+        {bookList.map((book) => (
+          <Book
+            key={book.id}
+            id={book.id}
+            author={book.author}
+            title={book.title}
+            category={book.category}
+            // removeClickHandler={removeClickHandler}
+          />
+        ))}
+      </ul>
+      <span className="br" />
+      <AddBookForm />
+    </>
+  );
+};
 export default BooksPage;
