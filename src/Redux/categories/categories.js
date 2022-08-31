@@ -1,5 +1,5 @@
 // Actions
-const GET_STATUS = 'GET_STATUS';
+export const GET_STATUS = 'bookstore/categories/GET_STATUS';
 
 // Action Creators
 export const getStatus = (payload = 'under construction') => ({ type: GET_STATUS, payload });
