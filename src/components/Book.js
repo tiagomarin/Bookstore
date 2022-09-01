@@ -9,7 +9,6 @@ const Book = (props) => {
     id, author, title, category,
   } = props;
   const dispatch = useDispatch();
-
   const removeClickHandler = () => {
     dispatch(removeBook(id));
   };
