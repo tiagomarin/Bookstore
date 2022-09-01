@@ -18,7 +18,7 @@ const AddBookForm = () => {
       title,
       author,
       category,
-      id: uuidv4(),
+      item_id: uuidv4(),
     }));
   };
 
