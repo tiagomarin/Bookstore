@@ -10,6 +10,8 @@ const AddBookForm = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
+  // const chapter_name = 'Intro'
+  // const current_chapter = '0'
 
   // handler form submit
   const AddBookHandler = (e) => {
@@ -19,18 +21,20 @@ const AddBookForm = () => {
       author,
       category,
       item_id: uuidv4(),
+      // chapter_name,
+      // current_chapter,
     }));
   };
 
   return (
     <div className="add-book-section">
-      <h3 className="add-book-section-title">Add a new book</h3>
+      <h3 className="add-book-section-title">ADD A NEW BOOK</h3>
       <form className="add-book-form" onSubmit={AddBookHandler}>
-        <input placeholder="Book Title" maxLength="40" required onInput={(e) => setTitle(e.target.value)} />
-        <input placeholder="Author" maxLength="40" required onInput={(e) => setAuthor(e.target.value)} />
+        <input className="form-field" placeholder="Book Title" maxLength="40" required onInput={(e) => setTitle(e.target.value)} />
+        <input className="form-field" placeholder="Author" maxLength="40" required onInput={(e) => setAuthor(e.target.value)} />
         {/* categories button */}
         <select
-          className="categories"
+          className="form-field"
           name="categoriesList"
           onChange={(e) => {
             setCategory(e.target.value);
@@ -53,7 +57,7 @@ const AddBookForm = () => {
           <option value="Magical Realism">Magical Realism</option>
           <option value="Realist Literature">Realist Literature</option>
         </select>
-        <button type="submit">Add book</button>
+        <button className="add-book-btn" type="submit">Add book</button>
       </form>
     </div>
   );

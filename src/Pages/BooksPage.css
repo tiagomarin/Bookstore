@@ -1,17 +1,13 @@
-.books-list {
+.books-page {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  list-style: none;
-  gap: 1.5rem;
-  padding: 4rem;
-  height: 100%;
+  margin-top: 6rem;
 }
 
 .br {
-  width: 90%;
+  width: 80%;
   margin: 0 4rem;
   height: 0.02rem;
   background-color: #e8e8e8;

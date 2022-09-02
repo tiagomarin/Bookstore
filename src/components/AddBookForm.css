@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-  padding: 4rem;
+  width: 80%;
+  padding: 3rem 0;
   gap: 1.5rem;
 }
 
-.add-book-form-title {
-  font-size: 2rem;
+.add-book-section-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: rgb(172, 172, 172);
 }
 
 .add-book-form {
@@ -19,6 +23,26 @@
   gap: 2rem;
 }
 
-.add-book-form > *input {
+.form-field {
   background-color: white;
+  padding: 0.6rem;
+  border: 1px solid #e8e8e8;
+}
+
+.form-field::-webkit-input-placeholder,
+.form-field::-moz-placeholder,
+.form-field:-ms-input-placeholder,
+.form-field:-moz-placeholder {
+  padding: 2rem;
+}
+
+.add-book-btn {
+  background-color: #0290ff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
 }

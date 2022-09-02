@@ -5,6 +5,8 @@
   width: 90%;
   background-color: white;
   padding: 2.5rem;
+  border: 1px solid #e8e8e8;
+  gap: 2rem;
 }
 
 .book-content {
@@ -12,6 +14,48 @@
   flex-direction: column;
   gap: 0.2rem;
   padding-right: 10rem;
+  width: 50%;
+}
+
+.book-content > p {
+  font-family: Montserrat, RobotoSlab, sans-serif;
+  color: #121212;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.book-content > h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-content > h4 {
+  padding-bottom: 1rem;
+}
+
+.book-content > h4,
+.actions > button {
+  font-family: RobotoSlab, Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #4386bf;
+}
+
+.actions > button {
+  border: none;
+  background-color: transparent;
+  color: #4386bf;
+}
+
+.remove-btn {
+  padding: 0 1rem;
+  border-left: solid 1px #e8e8e8 !important;
+  border-right: solid 1px #e8e8e8 !important;
 }
 
 .actions {
@@ -19,9 +63,81 @@
   gap: 1rem;
 }
 
+.book-progress-section {
+  display: flex;
+  gap: 3rem;
+}
+
+.progress-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 3rem;
+  border-right: solid 1px rgb(200, 200, 200);
+}
+
+.progress-grey-circle {
+  background-color: rgb(200, 200, 200);
+  border-radius: 20px;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.progress-circle-middle {
+  background-color: white;
+  border-radius: 20px;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+}
+
+.progress-percent {
+  font-family: Montserrat, sans-serif;
+  letter-spacing: normal;
+  font-size: 2rem;
+}
+
+.progress-percent > span {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
 .update-progress {
+  font-family: RobotoSlab, Montserrat, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 0.5rem;
+}
+
+.update-progress > input {
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  font-weight: 300;
+}
+
+.update-progress > input:nth-child(1) {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.update-progress > input:nth-child(2) {
+  padding-bottom: 1rem;
+}
+
+.update-progress > button {
+  background-color: #0290ff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
 }
