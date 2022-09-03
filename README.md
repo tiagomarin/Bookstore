@@ -35,8 +35,7 @@ To build this app these React features were used:
 
 ## Live demo
 
-Not available yet.
-<!-- Live demo is available through [this link](). -->
+<!-- Live demo is available through [this link](https://bookstore-tm.netlify.app/). -->
 
 <br>
 
